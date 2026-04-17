@@ -371,44 +371,107 @@ img {
 }
 
 /*=============== SKILLS ===============*/
-.skills__container {
-  grid-template-columns: 1fr;
-  row-gap: 3rem;
+.skills__header {
+  text-align: left;
+  margin-bottom: 4rem;
+  max-width: 1024px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
 }
 
-.skills__card {
-  background-color: var(--container-color);
-  padding: 3rem 2rem;
-  border-radius: 1.25rem;
-  border: 1px solid var(--border-color);
-  text-align: center;
-  transition: transform .4s, border-color .4s;
-}
-
-.skills__card:hover {
-  transform: translateY(-10px);
-  border-color: var(--first-color);
-}
-
-.skills__icon {
-  font-size: 3rem;
-  color: var(--first-color);
-  margin-bottom: 1.5rem;
-}
-
-.skills__list {
+.skills__label {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: .75rem;
+  align-items: center;
+  column-gap: .75rem;
+  color: #00d1ff;
+  font-family: monospace;
+  font-weight: var(--font-bold);
+  font-size: var(--small-font-size);
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
 }
 
-.skills__badge {
-  background-color: var(--body-color);
-  padding: 6px 14px;
-  border-radius: .5rem;
-  font-size: var(--small-font-size);
-  border: 1px solid var(--border-color);
+.skills__dot {
+  width: 10px;
+  height: 10px;
+  background-color: #00d1ff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00d1ff;
+}
+
+.skills__main-titleWide {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: var(--white-color);
+  font-family: var(--title-font);
+  line-height: .8;
+}
+
+@media screen and (min-width: 1024px) {
+  .skills__main-titleWide {
+    font-size: 5rem;
+  }
+}
+
+.skills__container {
+  row-gap: 4rem;
+}
+
+.skills__group-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: .75rem;
+}
+
+.skills__group-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.skills__items {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.skills__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .75rem;
+}
+
+.skills__name {
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+}
+
+.skills__percentage {
+  font-size: var(--normal-font-size);
+  color: #00d1ff;
+  font-weight: var(--font-semi-bold);
+}
+
+.skills__bar {
+  width: 100%;
+  height: 4px;
+  background-color: var(--container-color);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.skills__percentage-bar {
+  height: 100%;
+  background: linear-gradient(to right, #7b61ff, #00d1ff);
+  border-radius: 2px;
+  box-shadow: 0 0 10px hsla(210, 100%, 50%, .3);
 }
 
 /*=============== PROJECTS ===============*/
@@ -482,11 +545,31 @@ img {
 .internship__container {
   max-width: 900px;
   background-color: var(--container-color);
-  padding: 5rem 2rem;
+  padding: 4rem 2rem;
   border-radius: 2rem;
   text-align: center;
-  border: 1px solid hsla(210, 100%, 50%, .3);
+  border: 1px solid hsla(210, 100%, 50%, .2);
   margin-block: 4rem;
+  margin-inline: auto;
+}
+
+.internship__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 1rem;
+}
+
+.internship__text {
+  margin-bottom: 2rem;
+  font-size: var(--normal-font-size);
+  color: var(--text-color-light);
+}
+
+.button--glow {
+  box-shadow: 0 0 20px hsla(210, 100%, 50%, .4);
+}
+
+.button--glow:hover {
+  box-shadow: 0 0 30px hsla(210, 100%, 50%, .6);
 }
 
 /*=============== EDUCATION ===============*/
