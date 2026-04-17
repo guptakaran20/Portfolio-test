@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Karan Gupta | Responsive Portfolio</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Karan<span>.</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- Theme change button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="hero__container container grid">
+                <div class="hero__content grid">
+                    <div class="hero__data">
+                        <span class="hero__badge">Aspiring Software Developer</span>
+                        <h1 class="hero__title">Hi, I'm <span class="highlight">Karan Gupta</span></h1>
+                        <h2 class="hero__subtitle"><span id="typewriter"></span></h2>
+                        
+                        <div class="hero__dsa">
+                            <i class="ri-code-line"></i>
+                            <span>Solved 250+ DSA Problems</span>
+                        </div>
+
+                        <div class="hero__buttons">
+                            <a href="#projects" class="button">View Projects</a>
+                            <a href="assets/resume.pdf" class="button button--ghost">Resume</a>
+                        </div>
+
+                        <div class="hero__social">
+                            <a href="https://github.com/guptakaran20" target="_blank" class="hero__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/guptakaran0720" target="_blank" class="hero__social-link">
+                                <i class="ri-linkedin-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero__image">
+                        <div class="hero__blob">
+                            <img src="assets/images/profile.jpg" alt="Karan Gupta profile image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <h2 class="section__title">About Me</h2>
+
+                <div class="about__data">
+                    <p class="about__description">
+                        Problem-solving enthusiast with strong foundations in <b>C++ and Python</b>, 
+                        passionate about algorithms, data structures, and building efficient solutions.
+                    </p>
+                    <p class="about__description">
+                        Currently exploring: <b>Web Development + System Design basics</b>. 
+                        I enjoy applying analytical thinking to design efficient systems.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills & Software</h2>
+
+            <div class="skills__container container grid">
+                <article class="skills__card">
+                    <i class="ri-braces-line skills__icon"></i>
+                    <h3 class="skills__title">Programming</h3>
+                    <div class="skills__list">
+                        <span class="skills__badge">C++</span>
+                        <span class="skills__badge">Python</span>
+                    </div>
+                </article>
+
+                <article class="skills__card">
+                    <i class="ri-global-line skills__icon"></i>
+                    <h3 class="skills__title">Web Development</h3>
+                    <div class="skills__list">
+                        <span class="skills__badge">HTML5</span>
+                        <span class="skills__badge">CSS3</span>
+                        <span class="skills__badge">TypeScript</span>
+                        <span class="skills__badge">React</span>
+                        <span class="skills__badge">Next.js</span>
+                        <span class="skills__badge">Tailwind CSS</span>
+                        <span class="skills__badge">Node.js</span>
+                        <span class="skills__badge">Express.js</span>
+                        <span class="skills__badge">MongoDB</span>
+                        <span class="skills__badge">MySQL</span>
+                        <span class="skills__badge">Git</span>
+                        <span class="skills__badge">GitHub</span>
+                        <span class="skills__badge">Postman</span>
+                    </div>
+                </article>
+
+                <article class="skills__card">
+                    <i class="ri-cpu-line skills__icon"></i>
+                    <h3 class="skills__title">Core Concepts</h3>
+                    <div class="skills__list">
+                        <span class="skills__badge">DSA</span>
+                        <span class="skills__badge">Algo</span>
+                        <span class="skills__badge">Electronics</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+    <h2 class="section__title">Featured Projects</h2>
+
+    <div class="projects__container container grid">
+
+        <!-- Project 1 -->
+        <article class="projects__card">
+            <h3 class="projects__title">SponsorGrid</h3>
+            <p class="projects__description">
+                A platform designed to streamline collaboration between college clubs and sponsors, enabling efficient event sponsorship management.
+            </p>
+            
+            <ul class="projects__bullets">
+                <li class="projects__item"><i class="ri-arrow-right-line"></i> Centralized club registration system</li>
+                <li class="projects__item"><i class="ri-arrow-right-line"></i> Simplified sponsor discovery & outreach</li>
+            </ul>
+
+            <div class="projects__stack">
+                <span class="projects__tag">Web</span>
+                <span class="projects__tag">Startup Idea</span>
+            </div>
+
+            <!-- Add link when ready -->
+            <a href="https://trysponsorgrid.vercel.app" class="projects__link">View</a>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="projects__card">
+            <h3 class="projects__title">Arovia Vibes</h3>
+            <p class="projects__description">
+                A modern web platform focused on delivering engaging digital experiences with clean UI and interactive design elements.
+            </p>
+            
+            <ul class="projects__bullets">
+                <li class="projects__item"><i class="ri-arrow-right-line"></i> Focus on aesthetic UI/UX design</li>
+                <li class="projects__item"><i class="ri-arrow-right-line"></i> Smooth interactions and responsiveness</li>
+            </ul>
+
+            <div class="projects__stack">
+                <span class="projects__tag">NextJs</span>
+                <span class="projects__tag">Spline</span>
+                <span class="projects__tag">PostgreSQL</span>
+            </div>
+            <a href="https://aroviavibes.vercel.app" class="projects__link">View</a>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="projects__card">
+            <h3 class="projects__title">Stranger Blogs</h3>
+            <p class="projects__description">
+                A blogging platform where users can explore and share ideas, focused on simplicity and clean content presentation.
+            </p>
+            
+            <ul class="projects__bullets">
+                <li class="projects__item"><i class="ri-arrow-right-line"></i> Clean and minimal blog interface</li>
+                <li class="projects__item"><i class="ri-arrow-right-line"></i> Deployed web application</li>
+            </ul>
+
+            <div class="projects__stack">
+                <span class="projects__tag">Web</span>
+                <span class="projects__tag">Frontend</span>
+            </div>
+
+            <a href="https://stranger-blogs.vercel.app" class="projects__link" target="_blank">
+                View <i class="ri-external-link-line"></i>
+            </a>
+        </article>
+
+    </div>
+</section>
+        <!--==================== INTERNSHIP ====================-->
+        <section class="section">
+            <div class="internship__container container">
+                <h2 class="section__title">Internships</h2>
+                <p>Actively seeking internship opportunities in Software Development.</p>
+                <a href="#contact" class="button">Open to Opportunities</a>
+            </div>
+        </section>
+
+        <!--==================== EDUCATION ====================-->
+        <section class="education section" id="education">
+            <h2 class="section__title">Education</h2>
+
+            <div class="education__container container grid">
+                <article class="education__card">
+                    <div class="education__dot"></div>
+                    <div class="education__content">
+                        <h3>B.Tech in ICE</h3>
+                        <p>NIT Jalandhar | 2029</p>
+                    </div>
+                </article>
+
+                <article class="education__card">
+                    <div class="education__dot"></div>
+                    <div class="education__content">
+                        <h3>High School</h3>
+                        <p>Dyanand Model School | 2025</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Get In Touch</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <div class="contact__icon">
+                            <i class="ri-mail-line"></i>
+                        </div>
+                        <div>
+                            <h3 class="contact__card-title">Email</h3>
+                            <p class="contact__card-data">guptakaran0720@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__card">
+                        <div class="contact__icon">
+                            <i class="ri-phone-line"></i>
+                        </div>
+                        <div>
+                            <h3 class="contact__card-title">Phone</h3>
+                            <p class="contact__card-data">+91 9417618987</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact__form grid">
+                    <div class="contact__box">
+                        <input type="text" placeholder="Name" class="contact__form-input">
+                    </div>
+                    <div class="contact__box">
+                        <input type="email" placeholder="Email" class="contact__form-input">
+                    </div>
+                    <div class="contact__box">
+                        <textarea name="message" placeholder="Message" class="contact__form-input contact__form-area"></textarea>
+                    </div>
+                    <button class="button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__social">
+                <a href="https://github.com/guptakaran20" target="_blank" class="footer__social-link">
+                    <i class="ri-github-line"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/guptakaran0720" target="_blank" class="footer__social-link">
+                    <i class="ri-linkedin-line"></i>
+                </a>
+            </div>
+
+            <span class="footer__copy">
+                &#169; 2026 Karan Gupta. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="script.js"></script>
+</body>
+</html>
